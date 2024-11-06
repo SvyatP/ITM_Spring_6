@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:with="lang=${#locale.language}" th:lang="${lang}">
+<head th:replace="layouts/main :: htmlhead" />
+<body>
+<nav th:replace="layouts/main :: navigation" />
+
+<div class="container">
+    <div class="header-bg">
+        <h1>ITM. Мы всегда рвём уверенно!</h1>
+        <p class="lead">Добро пожаловать в приложение для управления пользователями</p>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col text-center">
+            <a th:href="@{/users}" class="btn btn-custom">Список пользователей</a>
+            <a th:href="${(#mvc.url('UC#addUserForm')).build()}" class="btn btn-custom ml-2">Создать нового пользователя</a>
+        </div>
+    </div>
+</div>
+
+<div th:replace="layouts/main :: footer"></div>
+</body>
+</html>

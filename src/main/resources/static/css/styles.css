@@ -1,0 +1,38 @@
+/* Голубой цвет для навбара и кнопок */
+.bg-custom-blue {
+    background-color: #007bff;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+/* Легкий оттенок голубого для чередующихся строк */
+.bg-custom-light {
+    background-color: #e9f4ff;
+}
+
+/* Кнопки для списка пользователей */
+.btn-custom-sm {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    font-size: 0.9em;
+    padding: 0.3rem 0.8rem;
+}
+.btn-custom-sm:hover {
+    background-color: #0056b3;
+}
+
+/* Фон заголовков */
+.header-bg {
+    background-color: #f0f8ff;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
